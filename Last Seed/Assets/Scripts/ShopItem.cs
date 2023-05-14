@@ -2,17 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShopItem : MonoBehaviour
+[CreateAssetMenu(fileName = "New Item", menuName ="GameObjects/ShopItem", order = 0)]
+public class ShopItem : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string Name = "Default";
+    public string Description = "Description";
+    public int Level;
+    public int Price;
+    public CurrencyType Currency;
+    public ObjectType Type;
+    public Sprite Icon;
+    public GameObject Prefab;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+}
+
+public enum ObjectType
+{
+        AnimalHomes,
+        Animals,
+        ProductionBuildings,
+        TreesBushes,
+        Decorations
 }
