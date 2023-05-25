@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 2555904616686410074}
   - component: {fileID: 2555904616686410052}
   - component: {fileID: 2555904616686410075}
+  - component: {fileID: 8274430985188924460}
+  - component: {fileID: 2654690245693753496}
+  - component: {fileID: 3478359427067150075}
   m_Layer: 5
   m_Name: Item 1 Icon
   m_TagString: Untagged
@@ -35,7 +38,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 731, y: 0}
+  m_AnchoredPosition: {x: 699, y: 0}
   m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2555904616686410052
@@ -76,6 +79,55 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!225 &8274430985188924460
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2555904616686410073}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!58 &2654690245693753496
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2555904616686410073}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 302.72
+--- !u!50 &3478359427067150075
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2555904616686410073}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2555904616797432828
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +193,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 47a7d79aff9f56e4690f4d562b81c63a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 36177164ce38b10429f30b88f9866ecb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -162,6 +214,7 @@ GameObject:
   - component: {fileID: 2555904617446403120}
   - component: {fileID: 2555904617446403122}
   - component: {fileID: 2555904617446403121}
+  - component: {fileID: 5905583017403649429}
   m_Layer: 5
   m_Name: 'ShopItem Holder '
   m_TagString: Untagged
@@ -229,6 +282,24 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5905583017403649429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2555904617446403127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769f6d111f84e0147b352c4717bc8402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titleText: {fileID: 2555904618435790228}
+  descriptionText: {fileID: 2555904617771951190}
+  amountText: {fileID: 4027611998522804178}
+  iconImage: {fileID: 2555904616686410075}
+  currencyImage: {fileID: 2555904616797432830}
+  priceText: {fileID: 2555904618312665118}
 --- !u!1 &2555904617771951188
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,7 +468,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 410, y: -151}
+  m_AnchoredPosition: {x: 433, y: -151}
   m_SizeDelta: {x: 800, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2555904618312665119
