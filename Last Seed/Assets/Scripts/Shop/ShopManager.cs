@@ -33,8 +33,9 @@ public class ShopManager : MonoBehaviour
 
     private void Start()
     {
-        currencySprites.Add(CurrencyType.Coins, sprites[0]);
-        currencySprites.Add(CurrencyType.Crystals, sprites[1]);
+        currencySprites.Add(CurrencyType.Cheese, sprites[0]);
+        currencySprites.Add(CurrencyType.Stones, sprites[1]);
+        currencySprites.Add(CurrencyType.Plastics, sprites[2]);
 
         gameObject.SetActive(false);
 
@@ -75,11 +76,11 @@ public class ShopManager : MonoBehaviour
     {
         for (int i = 0; i < shopItems.Keys.Count; i++)
         {
+            
             ObjectType key = shopItems.Keys.ToArray()[i];
             for (int j = 0; j < shopItems[key].Count; j++)
             {
                 ShopItem item = shopItems[key][j];
-
                 if(item.Level == info.newLvl)
                 {
                     shopTabs.transform.GetChild(i).GetChild(j).GetComponent<ShopItemHolder>().UnlockItem();

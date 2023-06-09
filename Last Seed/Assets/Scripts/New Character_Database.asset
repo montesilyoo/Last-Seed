@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f442fa6b2c265314aa3bbb1f4e730506, type: 3}
+  m_Name: New Character_Database
+  m_EditorClassIdentifier: 
+  character:
+  - characterName: Empty
+    characterType: ' '
+    characterSprite: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    isLocked: 0
+  - characterName: Ratniss
+    characterType: HITTER
+    characterSprite: {fileID: 3227218044718277565, guid: 25d5f299c0f072b4dbda6931a8e76c2d, type: 3}
+    characterPrefab: {fileID: 7252036440639695208, guid: 8aa9085b71f1cb345a7e70e786e1a88c, type: 3}
+    isLocked: 0
+  - characterName: Happy
+    characterType: SUPPORT
+    characterSprite: {fileID: 4723107735738678597, guid: 49d68b7f59ca2e249b533bdcfa7bf117, type: 3}
+    characterPrefab: {fileID: 6979926902720089573, guid: ff598e95753ffa5469415d1a68f6cfce, type: 3}
+    isLocked: 0
+  - characterName: Rubela
+    characterType: SUPPORT
+    characterSprite: {fileID: 4723107735738678597, guid: 42c5a8f1fb834f440b4463fabed3d150, type: 3}
+    characterPrefab: {fileID: 4859297682669637334, guid: 49fbf8710f9926d4ab0589f9745ed63d, type: 3}
+    isLocked: 0
+  - characterName: Macho Nacho
+    characterType: TANKER
+    characterSprite: {fileID: 4723107735738678597, guid: 659562d6422a4df4eb95d1babd72ffb2, type: 3}
+    characterPrefab: {fileID: 8139780767194647073, guid: 78663cc4e18ddb944894e0fa116ee9ea, type: 3}
+    isLocked: 0
+  - characterName: Biggie
+    characterType: TANKER
+    characterSprite: {fileID: 4723107735738678597, guid: 96dbb96585247434bbeab95497243bdd, type: 3}
+    characterPrefab: {fileID: 765809328886839, guid: fb08a227d8f95fb4a84961b8155aab93, type: 3}
+    isLocked: 0
+  - characterName: Shelly
+    characterType: HITTER
+    characterSprite: {fileID: 4723107735738678597, guid: 46ef9a99516a85d40ab4036c339bb008, type: 3}
+    characterPrefab: {fileID: 5380092403624874765, guid: 88a953798b214484da7de3afc73734bd, type: 3}
+    isLocked: 0

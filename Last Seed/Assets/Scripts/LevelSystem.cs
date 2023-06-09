@@ -128,11 +128,11 @@ public class LevelSystem : MonoBehaviour
         });
 
         CurrencyChangeGameEvent currencyInfo = 
-            new CurrencyChangeGameEvent(lvlReward[info.newLvl][0], CurrencyType.Coins);
+            new CurrencyChangeGameEvent(lvlReward[info.newLvl][0], CurrencyType.Cheese);
         EventManager.Instance.QueueEvent(currencyInfo);
 
         currencyInfo = 
-            new CurrencyChangeGameEvent(lvlReward[info.newLvl][1], CurrencyType.Crystals);
+            new CurrencyChangeGameEvent(lvlReward[info.newLvl][1], CurrencyType.Stones);
         EventManager.Instance.QueueEvent(currencyInfo);
     }
 

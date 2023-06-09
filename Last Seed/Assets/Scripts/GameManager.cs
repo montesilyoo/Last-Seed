@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,8 +25,13 @@ public class GameManager : MonoBehaviour
 
     public void GetCoins(int amount)
     {
-        CurrencyChangeGameEvent info = new CurrencyChangeGameEvent(amount, CurrencyType.Coins);
+        CurrencyChangeGameEvent info = new CurrencyChangeGameEvent(amount, CurrencyType.Cheese);
 
         EventManager.Instance.QueueEvent(info);
+    }
+
+    public void BattleSelect(string _LevelName)
+    {
+        SceneManager.LoadScene(_LevelName);
     }
 }

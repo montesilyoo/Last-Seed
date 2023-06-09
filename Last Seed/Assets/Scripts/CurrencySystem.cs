@@ -28,6 +28,11 @@ public class CurrencySystem : MonoBehaviour
         EventManager.Instance.AddListener<NotEnoughCurrencyGameEvent>(OnNotEnough);
     }
 
+    private void UpdateUI()
+    {
+        
+    }
+
     private void OnCurrencyChange(CurrencyChangeGameEvent info)
     {
         //todo save the currency
@@ -43,6 +48,7 @@ public class CurrencySystem : MonoBehaviour
 
 public enum CurrencyType
 {
-    Coins,
-    Crystals
+    Cheese,
+    Stones,
+    Plastics,
 }

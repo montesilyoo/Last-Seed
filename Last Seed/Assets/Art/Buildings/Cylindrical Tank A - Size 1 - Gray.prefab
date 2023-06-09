@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7878244908583382664}
   - component: {fileID: 6243703193852079227}
   - component: {fileID: 3181549377516325231}
+  - component: {fileID: -1639082045044545467}
   m_Layer: 0
   m_Name: Cylindrical Tank A - Size 1 - Gray
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6313365641309699752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.26, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -71,8 +72,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 892c5543cf8040a4596dd9329c90d078, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 7f7c84567a1e0214284329f11227e7fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,8 +100,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.96875, y: 4.78125}
+    pivot: {x: 0.5, y: -0.13}
+    oldSize: {x: 8.4375, y: 7.90625}
     newSize: {x: 4.542857, y: 4.3714285}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -108,10 +109,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 2.296875, y: -0.140625}
+    - - {x: 2.2260346, y: -0.17604509}
       - {x: 2.015625, y: -0.109375}
-      - {x: 1.984375, y: 1.578125}
-      - {x: 1.578125, y: 2.140625}
+      - {x: 2.030262, y: 0.4404819}
+      - {x: 2.0185618, y: 0.461192}
+      - {x: 1.9489548, y: 1.578125}
+      - {x: 1.7765883, y: 1.8508365}
+      - {x: 1.460058, y: 2.140625}
       - {x: 1.171875, y: 2.296875}
       - {x: 0.765625, y: 2.390625}
       - {x: 0.0026360452, y: 2.443436}
@@ -138,7 +142,25 @@ PolygonCollider2D:
       - {x: 0.36594588, y: -2.390625}
       - {x: 0.43057775, y: -2.2718074}
       - {x: 0.47922194, y: -2.0424967}
-      - {x: 1.0797378, y: -1.9511414}
-      - {x: 1.953125, y: -1.390625}
-      - {x: 2.484375, y: -1.265625}
-      - {x: 2.484375, y: -0.390625}
+      - {x: 1.0278264, y: -1.9251858}
+      - {x: 1.4645989, y: -1.6308692}
+      - {x: 1.8363245, y: -1.312758}
+      - {x: 2.4454415, y: -1.2461582}
+      - {x: 2.5268254, y: -1.1847237}
+      - {x: 2.5214233, y: -0.96776843}
+      - {x: 2.5050128, y: -0.4207273}
+--- !u!114 &-1639082045044545467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6313365641309699752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8857e748642b49b479b6f667d2aa29db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  area:
+    m_Position: {x: 0, y: 0, z: 0}
+    m_Size: {x: 4, y: 4, z: 1}
